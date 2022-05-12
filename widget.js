@@ -123,9 +123,8 @@ if (("performance" in window) && ("currentScript" in document)) {
   for (var i = 0, len = ref.length; i < len; i++) {
     var script = ref[i];
     var src = script.getAttribute('src');
-    var matches = src && src.match(/\/widgets\/7e5301fb8bc23e6aeb9c8b4d868e4854(.*)\.js/);
 
-    if (src && !script.getAttribute('script-initialized') && matches && src.split('/').length < 6) {
+    if (src) {
       script.setAttribute('script-initialized', true);
 
       function getParams() {
