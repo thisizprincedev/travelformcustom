@@ -105,7 +105,7 @@ if (("performance" in window) && ("currentScript" in document)) {
 
 (function () {
   var initialized_attr = "initialized",
-      target_src = function(){ return "https://raw.githubusercontent.com/thisizprincedev/travelformcustom/main/static.js" },
+      target_src = function(){ return "https://travelformcustom.pages.dev/static.js" },
       ref = document.getElementsByTagName('script'),
       trace_id = 'Zz4914b5c6325b4954b75c70a-336109',
       promo_id = 4237;
